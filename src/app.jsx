@@ -110,6 +110,7 @@ function App() {
         <DogNote />
         <Lodging onBook={openBook} />
         <Territory />
+        <Picnic />
         <Gallery season={season} />
         <Kitchen />
         <Blini />
