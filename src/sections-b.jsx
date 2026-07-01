@@ -227,4 +227,31 @@ function DogNote() {
   );
 }
 
-Object.assign(window, { Compare, Audience, DogNote, Lodging, Territory, HOUSES });
+
+function Picnic() {
+  return (
+    <section className="section picnic-promo" id="picnic" style={{ minHeight: "400px", position: "relative", overflow: "hidden" }}>
+      <div
+        className="picnic-bg"
+        style={{
+          position: "absolute", inset: 0,
+          backgroundImage: "url(assets/photos/picnic.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div style={{ position: "absolute", inset: 0, background: "rgba(0,0,0,0.45)" }} />
+      </div>
+      <div className="container" style={{ position: "relative", zIndex: 1, display: "flex", flexDirection: "column", alignItems: "flex-start", justifyContent: "center", minHeight: "400px", gap: "16px", padding: "60px 20px" }}>
+        <Reveal>
+          <span className="eyebrow on-dark">Туристические пикники</span>
+          <h2 className="title" style={{ color: "#fff", marginTop: "8px" }}>Дико. Вкусно. Красиво.</h2>
+          <p className="body lg" style={{ color: "rgba(255,255,255,0.85)", maxWidth: "52ch" }}>Индивидуальные пикник-туры на внедорожниках.</p>
+          <Button variant="gold" href="https://altaipicnic.ru" target="_blank" rel="noopener noreferrer" style={{ marginTop: "8px" }}>Подробнее</Button>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+Object.assign(window, { Compare, Audience, DogNote, Lodging, Territory, HOUSES, Picnic });
